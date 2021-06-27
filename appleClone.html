@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" 
+    crossorigin="anonymous">
+    <!--제이쿼리-->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <title>신학기 - 학생 할인 - 교육 - Apple (KR) </title>
+    <link href = "appleMain.css" rel = 'stylesheet'>
+</head>
+<body>
+    <div id = "container">
+        <!--First header-->
+        <header>
+            <ul>
+                <li>교육 할인 스토어 홈</li>
+                <li class = "haveLeftLine">스토어 나가기</li>
+            </ul>
+        </header>
+        <!--list : nav-->
+        <nav>
+            <ul>
+                <li><i class="fab fa-apple"></i></li>
+                <li>Mac</li>
+                <li>iPad</li>
+                <li>iPhone</li>
+                <li>Watch</li>
+                <li>Music</li>
+                <li>고객지원</li>
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-shopping-bag"></i></li>
+            </ul>
+        </nav>
+        <!--Main-->
+        <div id = "main">
+            <div class = "mainAd">
+                <h1>대학 생활용 Mac 또는 iPad<br> 구입하고 AirPods까지 덤으로.</h1>
+                <p>적용 대상 Mac 또는 iPad 를 교육 할인가로 구입하면 AirPods을 덤으로 드립니다.<br>
+                원한다면 AirPods Pro로 업그레이드할 수도 있죠. AppleCare+ 20% 할인,<br>
+                액세서리 할인 등 다양한 혜택을 놓치지 마세요. </p>
+                <video autoplay loop >
+                    <source src="appleImgs/headerVideo.mp4" type = 'video/mp4'>
+                </video>
+            </div>
+        </div>
+        <!--first : slide for mac-->
+        <div id = "firstSlideAll">
+            <!--slideMacBox-->
+        <div id = 'slideMacBox'>
+
+            <!--이전 btn-->
+            <button class = "prev moveBtn" onclick = "prev()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class = "macIntro slide activeSlide">
+                <h1>Mac 이 대학<br>생활에 좋은<br> 이유</h1>
+            </div>
+
+            <div class = "slideForMac slide activeSlide">
+                <h4>조별과제 준비.<br>떨어져 있어도 척척.</h4>
+                <img src = "appleImgs/carousel-mac-one-202101.png">
+                <h5>Mac에서 FaceTime으로 함께하는 조별과제.<br>
+                AirPods으로 나누는 멋진 아이디어들.</h5>
+            </div>
+
+            <div class = "slideForMac slide">
+                <h4>어떤 과제도 척척.<br>능률도 쑥쑥.</h4>
+                <img src = "appleImgs/carousel-mac-two-202101.png">
+                <h5>Pages,Keynote,Numbers는 Mac에게 기본<br>
+                Microsoft 365 같은 다른 앱들도 마음껏.</h5>
+            </div>
+
+            <div class = "slideForMac slide">
+                <h4>성능이 한가득.<br>전문가용 앱에 딱.</h4>
+                <img src = "appleImgs/carousel-mac-three-202101.png">
+                <h5>Mac이 선사하는 강력한 성능들.<br>
+                프로 앱 번들로 번뜩이는 창의성.</h5>
+            </div>
+
+            <div class = "slideForMac slide">
+                <h4>iPhone에 아이디어 담고,<br>Mac으로 그걸 다듬고 정리하고.</h4>
+                <img src = "appleImgs/carousel-mac-four-202101.png">
+                <h5>iPhone에 저장해 둔 아이디어.<br>
+                Mac에서 더 다듬고, 빛나게.</h5>
+            </div>
+            <div class = "slideForMac slide">
+                <h4>머릿속 앱.<br>현실세계로 소환.</h4>
+                <img src = "appleImgs/carousel-mac-five-202008.png">
+                <h5>Mac에서 갈고 닦은 코딩 기술.<br>
+                Xcode로 완성하는 차세대 대박 앱.</h5>
+            </div>
+            <!--다음 btn-->
+            <button class = "next moveBtn" onclick = "next()">
+                <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <!--slideDots-->
+        <div id = "slideDots">
+            <ul>
+                <li class = "eachdot activeDot"></li>
+                <li class = "eachdot"></li>
+                <li class = "eachdot"></li>
+            </ul>
+        </div>
+        </div>
+        <!--first : column for mac-->
+        <div id = "secondColumnAll">
+            <div class = "columnMacBox">
+            <div class = "columnForMac1 in6column">
+                <h3>Mac을 사면<br>AirPods이<br>덤으로.</h3>
+                <P>적용 대상 Mac 최대 <br> ₩271,000 할인에<br>
+                AirPods까지 덤으로 받고, <br>
+                AppleCare+도 20%<br>
+                할인가로 구입하는 등, 다양한<br>혜택을 누리세요.</P>
+            </div>
+            <div class = "columnForMac2 in6column newmac">
+                <img src = "appleImgs/1pinwheel-mac-macbook-air-202101.jpeg">
+                <p class = 'new'>New</p>
+                <p class = "nameOfMac"><b>MacBook Air</b></p>
+                <p class = "priceOfMac">₩1,160,000부터</p>
+            </div>
+            <div class = "columnForMac3 in6column newmac">
+                <img src = "appleImgs/2pinwheel-mac-macbook-pro-13-202101.jpeg">
+                <p class = "new">New</p>
+                <p class = "nameOfMac"><b>MacBook Pro(13형)</b></p>
+                <p class = "priceOfMac">₩1,560,000부터</p>
+            </div>
+            <div class = "columnForMac4 in6column">
+                <img src = "appleImgs/3pinwheel-mac-macbook-pro-16-202006.jpeg">
+                <p class = "new hiddenNew">New</p>
+                <p class = "nameOfMac">MacBook Pro(16형)</p>
+                <p class = "priceOfMac">₩2,919,000부터</p>
+            </div>
+            <div class = "columnForMac5 in6column">
+                <img src = "appleImgs/4pinwheel-mac-imac-202101.jpeg">
+                <p class = "new hiddenNew">New</p>
+                <p class = "nameOfMac">iMac</p>
+                <p class = "priceOfMac">₩1,370,000부터</p>
+            </div>
+            <div class = "columnForMac6 in6column">
+                <img src = "appleImgs/5pinwheel-mac-imac-pro-202101_GEO_KR.jpeg">
+                <p class = "new hiddenNew" >New</p>
+                <p class = "nameOfMac">iMac Pro</p>
+                <p class = "priceOfMac">₩5,800,000부터</p>
+            </div>
+        </div>
+        </div>
+        <!--first : icons for mac-->
+        <div id = "thirdIconsAll">
+            <div class = "firstIcon-compareMac icons">
+                <div class = "iconBox"><img src = "appleImgs/mac.png"></div>
+                <p>Mac 모델 비교하기</p>
+                <p class = "blueFont">당신에게 가장 알맞은 Mac 을 찾아보세요 ></p>
+            </div>
+            <div class = "secondIcon-credit icons">
+                <div class = "iconBox"><img src = "appleImgs/valueprops-mac-credit-202006.png"></div>
+                <p>새 Mac 구매 시 사용할 수 있는 크레딧을 받는 법</p>
+                <p class = "blueFont">보상 판매 가격 알아보기 > </p>
+            </div>
+            <div class = "thirdIcon-inquiry icons">
+                <div class = "iconBox"><img src = "appleImgs/malpoongsun.png"></div>
+                <p>Mac 선택에 도움이 필요하신가요?</p>
+                <p class = "blueFont">문의해주세요.</p>
+            </div>
+        </div>
+
+        <!--second : slide for ipad-->
+        <div id = "secondSlideAll">
+            <!--slideMacBox-->
+        <div id = 'slideMacBox'>
+
+            <!--이전 btn-->
+            <button class = "prev2 moveBtn" onclick = "prev2()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class = "ipadIntro slide2 activeSlide2">
+                <h1>iPad와<br>함께하는 더<br>스마트한<br>대학 생활.</h1>
+            </div>
+
+            <div class = "slideForIpad slide2 activeSlide2">
+                <h4>온라인 강의에도 딱.<br>필기에도 딱.</h4>
+                <img src = "appleImgs/carousel-ipad-one-202101_GEO_KR.png">
+                <h5>온라인 수업은 iPad로 편하게<br>
+                일상의 디테일은 Apple Pencil로 꼼꼼하게.</h5>
+            </div>
+
+            <div class = "slideForIpad slide2">
+                <h4>꿈꾸던 캔버스.<br>그에 어울리는 도구.</h4>
+                <img src = "appleImgs/carousel-ipad-two-202101.png">
+                <h5>iPad로 어디에서든 아이디어를 슥슥<br>
+                Apple Pencil로 세심한 터치를 슥슥.</h5>
+            </div>
+
+            <div class = "slideForIpad slide2">
+                <h4>촬영도 하고.<br>편집도 하고.</h4>
+                <img src = "appleImgs/carousel-ipad-three-202101_GEO_KR.png">
+                <h5>iPad로 멋지게 촬영하고.<br>
+                iMovie로 완벽하게 편집하고.</h5>
+            </div>
+
+            <div class = "slideForIpad slide2">
+                <h4>스와이프하고.<br>타이핑하고.</h4>
+                <img src = "appleImgs/carousel-ipad-four-202101_GEO_KR.png">
+                <h5>프레젠테이션 작성은 Magic Keyboard로.<br>
+                    폼나게<br>
+                탐색은 트랙패드로 손맛 있게.</h5>
+            </div>
+            <div class = "slideForIpad slide2">
+                <h4>게임의 레벨업.<br>몰입감 넘치는 사운드까지.</h4>
+                <img src = "appleImgs/carousel-ipad-five-202101_GEO_KR.png">
+                <h5>Apple Arcade로 머리를 식히며 재충전하고.<br>
+                AirPods의 풍부한 사운드에 흠뻑 빠지고.</h5>
+            </div>
+            <!--다음 btn-->
+            <button class = "next2 moveBtn" onclick = "next2()">
+                <i class="fas fa-chevron-right"></i></button>
+            </div>
+            <!--slideDots-->
+        <div id = "slideDots">
+            <ul>
+                <li class = "eachdotForIpad activeDotForIpad"></li>
+                <li class = "eachdotForIpad"></li>
+                <li class = "eachdotForIpad"></li>
+            </ul>
+        </div>
+        </div>
+        <!--second : column for ipad-->
+        <div id = "secondColumnAll">
+            <div class = "columnMacBox">
+            <div class = "columnForMac1 in6column">
+                <h3>iPad를 사면<br>AirPods이<br>덤으로.</h3>
+                <P>적용 대상 iPad 최대 <br> ₩130,000 할인, iPad<br>
+                액세서리 할인, AppleCare+도<br>
+                20% 할인 등 다양한 혜택을<br> 누리세요.</P>
+            </div>
+            <div class = "columnForMac2 in6column newmac">
+                <img src = "appleImgs/1pinwheel-ipad-pro-202101_GEO_KR.png">
+                <p class = 'new'>무료 각인 서비스</p>
+                <p class = "nameOfMac"><b>iPad Pro</b></p>
+                <p class = "priceOfMac">₩965,000부터</p>
+            </div>
+            <div class = "columnForMac3 in6column newmac">
+                <img src = "appleImgs/2.pinwheel-ipad-air-202101_GEO_KR.png">
+                <p class = "new">무료 각인 서비스</p>
+                <p class = "nameOfMac"><b>iPad Air(13형)</b></p>
+                <p class = "priceOfMac">₩715,000부터</p>
+            </div>
+            <div class = "columnForMac4 in6column">
+                <img src = "appleImgs/3.pinwheel-ipad-pencil-202006.png">
+                <p class = "new">2세대용 무료 각인 서비스</p>
+                <p class = "nameOfMac">Apple Pencil(16형)</p>
+                <p class = "priceOfMac">₩109,000부터</p>
+            </div>
+            <div class = "columnForMac5 in6column">
+                <img src = "appleImgs/4pinwheel-ipad-magickeyboard-202009.png">
+                <p class = "new hiddenNew">무료 각인 서비스</p>
+                <p class = "nameOfMac">Magic Keyboard</p>
+                <p class = "priceOfMac">₩360,000부터</p>
+            </div>
+            <div class = "columnForMac6 in6column">
+                <img src = "appleImgs/5;pinwheel-ipad-smartcover-202006.png">
+                <p class = "new hiddenNew" >무료 각인 서비스</p>
+                <p class = "nameOfMac">Smart Cover</p>
+                <p class = "priceOfMac">₩99,000부터</p>
+            </div>
+        </div>
+        </div>
+        <!--second : icons for ipad-->
+        <div id = "thirdIconsAll">
+            <div class = "firstIcon-compareMac icons">
+                <div class = "iconBox"><img src = "appleImgs/icon1valueprops-ipad-compare-202006.png"></div>
+                <p>iPad 모델 비교하기</p>
+                <p class = "blueFont">당신에게 가장 알맞은 iPad 을 찾아보세요 ></p>
+            </div>
+            <div class = "secondIcon-credit icons">
+                <div class = "iconBox"><img src = "appleImgs/icon2valueprops-ipad-credit-202006.png"></div>
+                <p>새 iPad 구매 시 사용할 수 있는 크레딧을 받는 법</p>
+                <p class = "blueFont">보상 판매 가격 알아보기 > </p>
+            </div>
+            <div class = "thirdIcon-inquiry icons">
+                <div class = "iconBox"><img src = "appleImgs/icon3valueprops-ipad-choose-202006.png"></div>
+                <p>iPad 선택에 도움이 필요하신가요?</p>
+                <p class = "blueFont">문의해주세요.</p>
+            </div>
+        </div>
+
+        <!--accesories-->
+        <div id = "accAll">
+            <h3>내일도 여전히 완벽한 액세서리.</h3>
+            <div class = "accBox">
+                <div class = "acc-1 accColumn">
+                    <img src = "appleImgs/1-acc.png">
+                    <p class = "hoverblueP">13형 MacBook Air 및 MacBook<br>
+                    Pro용 가죽 슬리브 - 미드나이트 블루</p>
+                    <p>₩199,000</p>
+                    <div class = "colorImgs">
+                        <img src = "appleImgs/1accOfColor1.png">
+                        <img src = "appleImgs/1accOfColor2.png">
+                        <img src = "appleImgs/1accOfColor3.png">
+                    </div>
+                </div>
+                <div class = "acc-2 accColumn">
+                    <img src = "appleImgs/2acc.png">
+                    <p class = "hoverblueP">Beats Solo Pro Wireless Noise<br>
+                    Cancelling 헤드폰 - 아이보리</p>
+                    <p>₩359,000</p>
+                    <div class = "colorImgs">
+                        <img src = "appleImgs/2accOfColor1.png">
+                        <img src = "appleImgs/2accOfColor2.png">
+                        <img src = "appleImgs/2accOfColor3.png">
+                    </div>
+                </div>
+                <div class = "acc-3 accColumn">
+                    <img src = "appleImgs/3acc.png">
+                    <p class = "hoverblueP">USB-C 충전 케이블(2m)</p>
+                    <p>₩25,000</p>
+                    <div class = "colorImgs">
+                    </div>
+                </div>
+            </div>
+            <p class = "blueFont">대학 생활 필수템 쇼핑하기</p>
+        </div>
+
+        <!--etc-->
+        <div id = "etcAll">
+            <h3>그 밖에도 종류별로 다양하게</h3>
+            <div class = "etcBox">
+                <div class = 'etcImgs'>
+                    <img src = "appleImgs/etc-1.jpeg">
+                    <img src = "appleImgs/etc-2.jpeg">
+                    <img src = "appleImgs/etc-3.jpeg">
+                    <img src = "appleImgs/etc-4.jpeg">
+                    <img src = "appleImgs/etc-5.jpeg">
+                </div>
+                <div class = "etcComent">
+                    <p>Apple 제작 정품</p>
+                    <p>새로운 제품</p>
+                    <p>헤드폰 & 스피커</p>
+                    <p>전원 & 케이블</p>
+                    <p>저장 장치</p>
+                </div>
+            </div>
+        </div>
+        <!--etc2-->
+        <div id = "etcAll2">
+            <h4>대학 생활</h4>
+            <h3>공부 박사 Apple.</h3>
+            <p>Apple 기기를 통해 대학 생활을 더 알차게 보내는 법에 대해 알아볼까요?</p>
+            <p class = "blueFont">더 알아보기 ></p>
+            <h3>Apple 쇼핑 경험이 언제나 탑클래스인 이유.</h3>
+            <div class = "svcBox">
+                <div class = "svc-1 svcs">
+                    <img src = "appleImgs/svc-1valueprops-shop-tradein-202006.jpeg">
+                    <h3>Apple Trade In으로 <br>크레딧 받기.</h3>
+                    <p class = 'blueFont'>보상 판매 가격 알아보기 ></p>
+                </div>
+                <div class = "svc-2 svcs">
+                    <img src = "appleImgs/svc-2valueprops-shop-delivery-202006.jpeg">
+                    <h3>무료 배송.</h3>
+                    <p class = 'blueFont'>더 알아보기 ></p>
+                </div>
+                <div class = "svc-3 svcs">
+                    <img src = "appleImgs/svc-3valueprops-shop-coverage-202006.jpeg">
+                    <h3>AppleCare+를 20% 더<br>저렴하게.</h3>
+                    <p class = 'blueFont'>더 알아보기 ></p>
+                </div>
+                <div class = "svc-4 svcs">
+                    <h3>무료 각인 서비스.</h3>
+                    <img src = "appleImgs/svc-4valueprops-shop-engraving-202101_GEO_KR.jpeg">
+                </div>
+            </div>
+            <!--footer-->
+            <footer>
+                <div id = "footNotes">
+                    <div class = "footContents">
+                        <div class = "pricing">
+                            사업자 등록번호 : 123-45-67890 | 통신판매업신고번호 : 제 2021-서울강남-12345호<br>
+                            대표이사 : LEE SOOKYOUNG | 주소 : 서울 특별시 강남구 12345번지<br>
+                            대표전화 : 080-123-4567 | 팩스 : 02-1234-5678<br>
+                        </div>
+                        <ol class = "footer-li">
+                            <li>프로모션 혜택은 2021년 1월 7일부터 3월 16일까지 Apple Store 매장이나 Apple 교육 할인 스토어에서, 또는 080-123-4567에 전화를 걸어 적용 가능 Apple 제품을 구입할 때 이용할 수 있습니다. 매장 내 프로모션<br>
+                            혜택의 제공 여부는 코로나19의 영향으로 Apple Store 매장이 문을 닫은 곳이 있어 제한될 수 있습니다. 프로모션 전체 이용 약관이 적용됩니다. apple.com/kr/promo.를 참고하십시오.</li>
+                            <li>AppleCare+의 Apple 교육 할인 프로모션은 프로모션 기간 중 적용 대상 제품에만 해당하며, 프로모션 대상이 아닌 Apple 교육 할인 혜택과 동시에 적용할 수 없습니다. 적용 대상 제품과 함께 구입하는 AppleCare+라고 해도<br>
+                            프로모션 기간 중이 아니면 해당 할인율이 적용되지 않습니다.</li>
+                            <li>Apple 교육 할인. 대학 재학생과 신입생, 그 학부모,교직원 등이 혜택을 이용할 수 있습니다. 수량에 제한이 있습니다.</li>
+                            <li>보상 판매 금액은 보상 판매되는 제품의 상태, 연도, 구성에 따라 달라집니다. 크레딧 또는 Apple Store Gift Card로 보상 판매를 받으려면 최소 19세 이상이어야 합니다. 일부 기기는 보상 판매 대상이 아닙니다. 적용 가능 기기의 <br>
+                            보상 판매 및 재활용에 대한 자세한 내용은 Apple의 보상 판매 파트너에서 확인하실 수 있습니다. 규제 및 제한이 적용될 수 있습니다. 예상 지불 금액 산정은 사용자가 제공한 설명과 일치하는 수령 기기를 기준으로 합니다. Apple은<br>
+                            어떤 기기든 수령을 거부하거나, 그 수량을 제한할 권리를 보유합니다.</li>
+                        </ol>
+                    </div>
+                    <!--footer-nav-->
+                    <div class = "globalfooter">
+                        <i class="fab fa-apple"></i><span> > </span><span>신학기</span>
+                    </div>
+                    <div class = "footer-nav">
+                        <div class = "eachFooter">
+                            <h6>쇼핑 및 알아보기 <span class = "hiddenForMobile">+</span></h6>
+                            <p>Mac</p>
+                            <p>iPad</p>
+                            <p>iPhone</p>
+                            <p>Apple Watch</p>
+                            <p>뮤직</p>
+                            <p>iTunes</p>
+                            <p>iPod touch</p>
+                            <p>액세서리</p>
+                        </div>
+                        <div class = "eachFooter">
+                            <h6>Apple Store <span class = "hiddenForMobile">+</span></h6>
+                            <p>온라인에서 쇼핑하기</p>
+                            <p>Apple Store App</p>
+                            <p>리퍼 및 특가 제품</p>
+                            <p>주문 상태</p>
+                            <p>쇼핑 도움말</p>
+                            <p>금융 혜택</p>
+                            <p>Apple Trade In</p>
+                        </div>
+                        <div class = "eachFooter">
+                            <h6>교육 <span class = "hiddenForMobile">+</span></h6>
+                            <p>Apple 그리고 교육</p>
+                            <p>대학 생활을 위한 제품 쇼핑하기</p>
+                            <h6>비즈니스 <span class = "hiddenForMobile">+</span></h6>
+                            <p>Apple 과 비즈니스</p>
+                            <p>비즈니스를 위한 제품 쇼핑하기</p>
+                        </div>
+                        <div class = "eachFooter">
+                            <h6>계정<span class = "hiddenForMobile">+</span></h6>
+                            <p>Apple ID 관리</p>
+                            <p>Apple Store 계정</p>
+                            <p>iCloud.com</p>
+                            <h6>Apple의 가치관<span class = "hiddenForMobile">+</span></h6>
+                            <p>손쉬운 사용</p>
+                            <p>환경</p>
+                            <p>개인정보 보호</p>
+                            <p>협력업체에 대한 책임</p>
+                        </div>
+                        <div class = "eachFooter">
+                            <h6>Apple 정보<span class = "hiddenForMobile">+</span></h6>
+                            <p>Apple 안내</p>
+                            <p>채용 안내</p>
+                            <p>Newsroom</p>
+                            <p>이벤트</p>
+                            <p>Apple 연락처</p>
+                        </div>
+                    </div>
+                    <div class = "footContents">다양한 쇼핑방법 
+                        <span class = "blueFont">Apple Store를 방문</span>하거나,
+                        <span class = "blueFont">리셀러</span>를 찾아보거나, 080-123-4567번으로 전화하세요
+                    </div>
+                    <div class = "footerLast">
+                        <ul class = "footer-li-last">
+                            <li class = "footerlightColor">Copyright © 2021 sookyoung Inc. All rights Reserved .</li>
+                            <li>개인정보 처리방침 |</li>
+                            <li>약관 |</li>
+                            <li>판매 및 환불 |</li>
+                            <li>법적 고지 |</li>
+                            <li>사이트 맵</li>
+                            <li class = "footerright">대한민국</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script src= "appleClone.js"></script>
+</body>
+</html>

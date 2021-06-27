@@ -1,0 +1,63 @@
+/*첫번째 전체 콜론*/
+#secondColumnAll{
+    padding: 107px 0 34px;
+    margin-bottom: 0;
+    text-align: center;box-sizing: border-box;
+    width: 100%;
+}
+.columnMacBox,#thirdIconsAll{
+    display: flex;flex-wrap: wrap; 
+    justify-content: center;
+    width : 1100px; margin : 0 auto;
+}
+.in6column {
+    width: 346.31px;height: 495px;
+    background-color: white;
+    margin: 3px;  cursor: pointer;
+    padding: 36px 0; box-sizing: border-box;
+}
+.columnForMac1 {text-align: left; padding : 40px 32px 0 64px; 
+    box-sizing: border-box; border-radius: 35px 0 0 0;}
+.columnForMac1 > h3 { font-size: 35px; margin-bottom: 0;}
+.columnForMac1 > p { font-size: 20px; line-height: 33px;}
+.columnForMac3 {
+    border-radius: 0 35px 0 0;
+}
+.columnForMac4 {border-radius: 0 0 0 35px ;}
+.columnForMac6{border-radius: 0 0  35px 0 ; }
+.new { color: var(--color-newcolor); font-size: 17px;}
+.nameOfMac {
+    font-size: 21px; font-weight: 700; 
+    margin: 8px 0;
+}
+.priceOfMac {
+    font-size: 19px;margin: 15.2px 0;
+}
+.hiddenNew {
+    visibility: hidden;
+}
+
+/*두번째 콜론 3개짜리*/
+
+#accAll{
+    background-color: var(--color-backgroundColor);
+    width: 100%; padding-bottom: 80px;
+}
+
+#accAll > h3 {margin : 0; padding-top : 100px;
+    font-size: 35px; text-align: center;}
+.accBox { display: flex; flex-wrap: wrap; justify-content: center;
+width: 1100px; margin: 20px auto;}
+.accColumn { 
+    background-color: white; margin: 5px; padding: 34px 40px;
+    width: 343.63; height: 490.22; cursor: pointer;
+}
+.accColumn > img { margin : 0 0 14px;
+    width: 266px; height: 291px;
+}
+.accColumn p { font-size: 16px; margin : 7px 0 0; 
+line-height: 30px; text-align: center;}
+.colorImgs { display: flex; flex-wrap: wrap; justify-content: center;
+margin : 15px;}
+.colorImgs img { margin : 5px;}
+#accAll > .blueFont { font-size: 15px;}

@@ -1,0 +1,46 @@
+@import "apple0-Head.css";
+@import "apple1-Slide.css";
+@import "apple2-Coulmn.css";
+@import "apple3-Icons.css";
+@import "apple4-Etc.css";
+@import "apple5-Footer.css";
+
+/*폰트*/
+@font-face {
+  src: url(../../../TTF/FontsFree-Net-SFProText-Regular.ttf);
+  font-family: sf pro;
+}
+
+* {
+  font-family: sf pro;
+}
+/*colors*/
+:root {
+  --color-topfontColor: #f5f5f7;
+  --color-navGray: #444444;
+  --color-headerGray: #333333;
+  --color-backgroundColor: rgb(241, 238, 245);
+  --color-mainfontColor: #1d1d1f;
+  --color-newcolor: #bf4800;
+  --color-infobluecolor: #0070c9;
+  --color-footerColor: #86868b;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#main,
+#secondColumnAll,
+#thirdIconsAll {
+  background-color: var(--color-backgroundColor);
+}
+
+#main {
+  text-align: center;
+  padding: 0 100px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 110px;
+}
