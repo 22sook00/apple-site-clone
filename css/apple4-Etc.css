@@ -1,0 +1,52 @@
+#etcAll {
+    background-color: white;
+    color : var(--color-headerGray);
+    padding: 65px 0 90px; width: 100%;
+}
+#etcAll > h3, #etcAll2 > h3 {
+    font-size: 35px; text-align: center;
+}
+.etcImgs, .etcComent  {
+    display: flex; flex-wrap: wrap; justify-content: center;
+
+}
+.etcImgs img, .etcComent p {
+    width: 183px; text-align: center;
+    cursor: pointer; margin : 5px;
+}
+.etcImgs img{
+    padding : 20px; box-sizing: border-box;
+}
+
+#etcAll2{
+    background-color: var(--color-backgroundColor);
+    color : var(--color-headerGray);
+    text-align: center; padding-top: 84px; box-sizing: border-box;
+}
+#etcAll2 h4 { font-size: 22px; font-weight: 900;}
+#etcAll2 p { padding-bottom: 9px; box-sizing: border-box;
+font-size: 19px;}
+.svcBox{
+    display: flex; flex-wrap: wrap; 
+    justify-content: center;
+    width: 1200px; margin: 0 auto;
+}
+.svcs {
+    width: 519px; height: 325px;
+    background-color: white;
+    margin : 5px 10px 5px 0;
+}
+.svcs img {
+    padding-top: 50px;
+}
+.svcs .blueFont {
+    font-size: 15px; padding-top: 0px;
+    cursor: pointer;
+}
+.svc-4 h3, .svcs h3{
+    font-size: 30px;
+    margin: 25px 0;
+}
+.svc-4 h3{
+    margin: 48px 0 0;
+}
